@@ -76,13 +76,24 @@
   padding: 1rem 4rem 1rem;
 }
 .slider {
-  position: absolute;
+  position: fixed;
   top: 50%;
+  right: 97%;
+}
+.slide-line {
+  width: 0.1rem;
+  height: 20rem;
+  background-color: black;
+  position: relative;
 }
 .progress-circle {
-  width: 5rem;
-  height: 5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: black;
   border-radius: 100%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
