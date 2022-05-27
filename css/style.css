@@ -92,8 +92,24 @@
   background-color: black;
   border-radius: 100%;
   position: absolute;
-  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.circle1 {
+  top: 10%;
+  background-color: #b00c0c;
+}
+.circle2 {
+  top: 30%;
+}
+.circle3 {
+  top: 50%;
+}
+.circle4 {
+  top: 70%;
+}
+.circle5 {
+  top: 90%;
+}
+
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
