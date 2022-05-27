@@ -9,7 +9,8 @@
 }
 
 /* CUSTOM PRODUCT PAGE START */
-.section-custom {
+.section-custom,
+.section-frist-cheackout {
   display: grid;
   grid-template-columns: 60%;
   justify-items: center;
@@ -18,7 +19,8 @@
  */
   padding: 5rem; /* delete after adding header */
   gap: 9rem; /* delete after adding header */
-  box-shadow: -2px 2px 50px -30px rgb(129, 23, 23);
+  /*   box-shadow: -2px 2px 50px -30px rgb(129, 23, 23);
+ */
 }
 .products-custom {
   display: flex;
@@ -34,7 +36,6 @@
 }
 .products-custom > * img {
   width: 60%;
-  
 }
 .container-custom img {
   width: 50%;
@@ -49,3 +50,39 @@
   color: white;
   padding: 1rem 2rem 1rem;
 }
+/* CUSTOM PRODUCT PAGE END */
+/* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
+.section-frist-cheackout :nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+.middle-line {
+  width: 0.1rem;
+  height: 7rem;
+  background-color: rgb(0, 0, 0);
+}
+.section-frist-cheackout button {
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 4rem 1rem;
+}
+.section-frist-cheackout button:last-child {
+  background-color: rgb(177, 177, 177);
+  font-size: 1rem;
+  border: none;
+  color: white;
+  padding: 1rem 4rem 1rem;
+}
+.slider {
+  position: absolute;
+  top: 50%;
+}
+.progress-circle {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  border-radius: 100%;
+}
+/* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
