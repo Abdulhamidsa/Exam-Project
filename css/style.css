@@ -7,7 +7,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  /*   overflow: hidden;
+ */
+}
 /* CUSTOM PRODUCT PAGE START */
 .section-custom,
 .section-frist-cheackout {
@@ -77,26 +80,42 @@
 }
 .slider {
   position: fixed;
-  top: 50%;
-  right: 97%;
+  top: 30%;
+  right: 95%;
 }
 .slide-line {
-  width: 0.1rem;
+  /*   width: 0.1rem;
   height: 20rem;
   background-color: black;
-  position: relative;
+  position: relative; */
 }
 .progress-circle {
   width: 1.1rem;
   height: 1.1rem;
   background-color: #b0b0b0;
   border-radius: 100%;
-  position: absolute;
+  /*   position: absolute;
+ */
   left: 50%;
-  transform: translate(-50%, -50%);
+  /*   transform: translate(-50%, -50%);
+ */
+  z-index: 500;
+}
+span {
+  width: 0.1rem;
+  height: 4.5rem;
+  background-color: #b0b0b0;
+  position: absolute;
+  right: 50%;
 }
 #circle1 {
   top: 10%;
+  background-color: black;
+}
+.progress-circles {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
 }
 #circle2 {
   top: 30%;
