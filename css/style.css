@@ -868,6 +868,61 @@ a.short-home:hover {
   /* background-size: cover; */
 }
 
+/***********  Mobile Custom Page  ******************/
+
+#combos-custom-page-img-bg {
+  background-image: url("../media/images/combos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 0 !important;
+}
+
+.combos-custom-page-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: var(--ptb-large);
+}
+
+.combos-custom-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  padding: var(--plr);
+  gap: 4rem;
+}
+
+.combos-custom-page-text,
+.combos-custom-page-img {
+  color: var(--yellow);
+  margin: var(--mtb);
+  width: 100%;
+}
+
+.combos-custom-page img {
+  width: 100%;
+}
+.combos-custom-page-img h3 {
+  /* margin: var(--mb); */
+  font-weight: 700;
+  /* margin-bottom: 80px; */
+  /* background-color: var(--white); */
+}
+
+.combos-custom-page-img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  /* height: 290px; */
+  /* background-image: url("../media/images/circular_economy-01.png"); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
 /*************** Mobile Shop  *************************************/
 
 .buttons-type-products {
@@ -1065,7 +1120,7 @@ footer ul {
   gap: 1rem;
   justify-content: center;
   align-items: flex-start;
-  padding: var(--plr);
+  /* padding: var(--plr); */
 }
 
 .single-products {
@@ -1425,6 +1480,24 @@ footer ul {
     height: 550px;
     /* background-image: url("../media/images/circular_economy-01.png"); */
   }
+
+  /******** Desktop Combos in Custom Page  ******/
+
+  .combos-custom-page {
+    flex-flow: row;
+  }
+
+  .custom-text,
+  .custom-img {
+    width: 100%; /*50% makes it 2 Col*/
+  }
+
+  .custom-combos-page-img {
+    height: 550px;
+    /* background-image: url("../media/images/circular_economy-01.png"); */
+  }
+
+  /**********************/
 
   .container-add-to-cart {
     width: 100%;
