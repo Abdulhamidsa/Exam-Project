@@ -87,28 +87,27 @@
   position: relative;
 }
 .progress-circle {
-  width: 1rem;
-  height: 1rem;
-  background-color: black;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #b0b0b0;
   border-radius: 100%;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.circle1 {
+#circle1 {
   top: 10%;
-  background-color: #b00c0c;
 }
-.circle2 {
+#circle2 {
   top: 30%;
 }
-.circle3 {
+#circle3 {
   top: 50%;
 }
-.circle4 {
+#circle4 {
   top: 70%;
 }
-.circle5 {
+#circle5 {
   top: 90%;
 }
 
