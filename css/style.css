@@ -1770,6 +1770,15 @@ footer ul {
   color:white;
   font-size: 27px;
 }
+.df-op{
+  display: flex;
+justify-content: space-evenly;
+
+}
+
+.op h2 {
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 768px) {
   .grid-container-ordering-process {
