@@ -1652,11 +1652,11 @@ footer ul {
 /******************   Abdulhamid   ****************/
 
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
-.ss {
+/* .ss {
   position: absolute;
   top: 10%;
   display: none;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -1672,7 +1672,8 @@ html {
 }
 .section-frist-cheackout,
 .middle-first-checkout,
-.end-first-checkout {
+.end-first-checkout,
+.picking-time-table {
   display: grid;
   grid-template-columns: 60%;
   justify-items: center;
@@ -1883,11 +1884,36 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
   width: 100%;
 } */
+.table-time td {
+  padding: var(--p);
+}
+
+.table-date td:focus {
+  background-color: #000000;
+  color: var(--white);
+}
+.table-time td:focus {
+  background-color: #000000;
+  color: var(--white);
+}
 table td {
-  border: 1px black solid;
+  border: 1px var(--black) solid;
+  cursor: pointer;
+  color: var(--black);
+  width: max-content;
   text-align: center;
+}
+.table-date tr:nth-child(1) {
+  /*   background-color: var(--brown);
+  color: var(--white); */
+}
+.table-date td {
   padding: var(--ps);
 }
-.table {
-  width: 15%;
+.picking-time-table > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 10rem;
 }
