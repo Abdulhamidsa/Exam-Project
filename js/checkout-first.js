@@ -29,8 +29,6 @@ const step1method2 = document.getElementById("next-button-cheackout1-method2");
 step1method2.addEventListener("click", function onClick(event) {
   document.querySelector("#circle2").style.backgroundColor = "var(--brown)";
   document.querySelector(".line1").style.backgroundColor = "var(--brown)";
-  /*   document.getElementById("down").scrollIntoView(true);
-   */
 });
 const step2 = document.getElementById("prev-button-delivery");
 step2.addEventListener("click", function onClick(event) {
@@ -56,3 +54,25 @@ step5.addEventListener("click", function onClick(event) {
   document.querySelector("#circle4").style.backgroundColor = "var(--brown)";
   document.querySelector(".slider-checkout").style.display = "none";
 });
+
+function displayMore() {
+  let x = document.getElementById("delivery-info");
+  let y = document.getElementById("delivery-info2");
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+  }
+}
+
+/* function displayMore2() {
+  let text = document.getElementById("delivery-info2");
+  if (text.style.opacity === "0") {
+    text.style.opacity = "1";
+  } else {
+    text.style.opacity = "0";
+  }
+} */

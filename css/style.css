@@ -1871,4 +1871,23 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   margin: var(--mtb-large);
 }
+#delivery-info {
+  display: none;
+}
+/* #delivery-info2 {
+  position: absolute;
+}  */
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
+/* .table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} */
+table td {
+  border: 1px black solid;
+  text-align: center;
+  padding: var(--ps);
+}
+.table {
+  width: 15%;
+}
