@@ -87,50 +87,175 @@
             </div>
 
         </div>
-        <div class="h100vh">
-            <section class="section-frist-cheackout" id="checkout-step1">
-                <h1>CHECKOUT</h1>
-                <div>
-                    <button onclick="window.location.href='picking-up.html'">PICKING
-                        UP</button>
-                    <div class="middle-line"></div>
-                    <button onclick="window.location.href='#cheackout-step1'">DELIVERY HOME</button>
-                </div>
-            </section>
-            <section class="section-frist-cheackout home-delivery-option">
+        <section class="section-frist-cheackout" id="checkout-step1">
+            <h1>CHECKOUT</h1>
+            <div>
+                <button onclick=" changeMethod()">PICKING
+                    UP</button>
+                <div class="middle-line"></div>
+                <button onclick="changeMethod2()">DELIVERY HOME</button>
+            </div>
+        </section>
+        <div id="method1" class="hidden">
+            <div class="section-frist-cheackout home-delivery-option">
                 <h2>DELIVERY OPTIONS</h2>
                 <div class="delivery-options">
                     <label>
-                        <input onclick="window.location.href='#cheackout-step2'" id="next-button-cheackout1-method2"
-                            type="radio" checked>
+                        <input onclick="window.location.href='#cheackout-step2-option1'"
+                            id="next-button-cheackout1-method2" type="radio" name="options" checked>
                         <img src="/media/svg/just-eat-logo.svg" alt="">
                     </label>
                     <label>
-                        <input onclick="window.location.href='#cheackout-step2'" id="next-button-cheackout1"
-                            type="radio" checked>
+                        <input onclick="window.location.href='#cheackout-step2-option1'" id="next-button-cheackout1"
+                            type="radio" name="options" checked>
                         <img src="./media/svg/wolt-logo.svg" alt="">
                     </label>
                 </div>
 
-            </section>
+            </div>
+            <div class="h100vh home-delivery-option step2" id="cheackout-step2-option1">
+                <section class="middle-first-checkout">
+                    <h2>DELIVERY COST</h2>
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="option">
+                                <label for="option2">Delivering today 13 May kl.10:00</label>
+                            </div>
+                            <p>DKK 49.00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="option">
+                                <label for="option2">Delivered by Monday 14 May kl.15:30</label>
+                            </div>
+                            <p>DKK 29.00</p>
+                        </div>
+                    </div>
+                    <div class="split-line"></div>
+                    <div>
+                        <div>
+                            <h4>TOTAL</h4>
+                            <p>DKK 345.00</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="cheackout-buttons">
+                    <button id="prev-button-time-picking-method1"
+                        onclick="window.location.href='#checkout-step1'">DELIVERY
+                        OPTIONS</button>
+                    <button id="next-button-summary" onclick="window.location.href='#cheackout-step2'">
+                        SUMMARY</button>
+                </div>
+            </div>
+            <div class="h100vh home-delivery-option">
+                <section class="middle-first-checkout" id="cheackout-step2">
+                    <h2>ORDER SUMMARY</h2>
+                    <div>
+                        <div>
+                            <div>
+                                <h4>Combo 1</h4>
+                                <p>(3 Medialunas w/creme, 3 Medialunas w/Dulce de Leche, 3 common Medialunas, 3
+                                    Alfajores de
+                                    maizena)</p>
+                            </div>
+                            <p>DKK 250.00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <h4>Delivery</h4>
+                                <p>Wolt</p>
+                            </div>
+                            <p>DKK 39.00</p>
+                        </div>
+                    </div>
+                    <div class="split-line"></div>
+                    <div>
+                        <div>
+                            <h4>TOTAL</h4>
+                            <p>DKK 289.00</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="cheackout-buttons">
+                    <button id="prev-button-time" onclick="window.location.href='#cheackout-step2-option1'">DELIVERY
+                        TIME</button>
+                    <button id="next-button-payment" onclick="window.location.href='#cheackout-step3'">GO TO
+                        PAYMENT</button>
+                </div>
+            </div>
+            <div class="h100vh home-delivery-option" id="cheackout-step3">
+                <section class="end-first-checkout">
+                    <h2>CHOOSE YOUR PAYMENT METHOD</h2>
+                    <div class="payment-section">
+                        <div class="payment-method-container">
+                            <div class="single-payment-method-container">
+                                <img src="./media/svg/visa-logo.svg" alt="">
+                                <span>Credit Card</span>
+                            </div>
+                            <div class="single-payment-method-container">
+                                <img src="./media/svg/mobile-pay-logo.svg" alt="">
+                                <span>Mobile Pay</span>
+                            </div>
+                            <div class="single-payment-method-container">
+                                <img src="./media/svg/paypal-logo.svg" alt="">
+                                <span>PayPal</span>
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <form action="" class="form-first-checkout">
+                                <div class="form-item">
+                                    <label for="firstname">Card holder name *</label>
+                                    <input type="text" class="fname">
+                                </div>
+                                <div class="form-item">
+                                    <label for="card-nr">Card number *</label>
+                                    <input type="number" class="cardnr">
+                                </div>
+                                <div class="form-item">
+                                    <label for="date"> Expire date *</label>
+                                    <input type="month" class="cardnr">
+                                </div>
+                                <div class="form-item">
+                                    <label for="date"> CVV *</label>
+                                    <input type="number" class="cardcvv">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cheackout-buttons">
+                        <button id="prev-button-summary" onclick="window.location.href='#cheackout-step2'">ORDER
+                            SUMMARY</button>
+                        <button id="next-button-finish-pay"
+                            onclick="window.location.href='#checkout-final-step'">PAY</button>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div id="method2" class="hidden">
             <section class="section-frist-cheackout picking-up-option">
                 <h2>DELIVERY OPTIONS</h2>
                 <div class="cheackout-buttons">
-                    <button onclick="window.location.href='#cheackout-step2'" id="next-button-cheackout2">Willemoesgade
+                    <button onclick="window.location.href='#cheackout-step2-option2'"
+                        id="next-button-cheackout2">Willemoesgade
                         12,
                         2tv. 2100 København</button>
-                    <button id="next-button-cheackout2-method2" onclick="window.location.href='#cheackout-step2'">Gammel
+                    <button id="next-button-cheackout2-method2"
+                        onclick="window.location.href='#cheackout-step2-option2'">Gammel
                         Kongevej
                         10,
                         1610 København V</button>
                 </div>
             </section>
-        </div>
-        <section>
-
-            <div class="picking-time-table picking-up-option" id="cheackout-step2">
+            <div class="picking-time-table h100vh" id="cheackout-step2-option2">
                 <h2>Pick time and date</h2>
-
                 <div>
                     <div>
                         <h3>Picking date</h3>
@@ -226,111 +351,101 @@
                 <div class="cheackout-buttons">
                     <button id="prev-button-delivery2" onclick="window.location.href='#cheackout-step1'">DELIVERY
                         OPTIONS</button>
-                    <button id="next-button-payment2" onclick="window.location.href='#cheackout-step3'">GO TO
+                    <button id="next-button-payment2" onclick="window.location.href='#cheackout-summary'">GO TO
+                        SUMMARY</button>
+                </div>
+            </div>
+            <div class="h100vh">
+                <section class="middle-first-checkout" id="cheackout-summary">
+                    <h2>ORDER SUMMARY</h2>
+                    <div>
+                        <div>
+                            <div>
+                                <h4>Combo 1</h4>
+                                <p>(3 Medialunas w/creme, 3 Medialunas w/Dulce de Leche, 3 common Medialunas, 3
+                                    Alfajores de
+                                    maizena)</p>
+                            </div>
+                            <p>DKK 250.00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <h4>Delivery</h4>
+                                <p>Pick up point : (Friday 27 Maj, 9:00 am Willemoesgade 12
+                                    ) </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="split-line"></div>
+                    <div>
+                        <div>
+                            <h4>TOTAL</h4>
+                            <p>DKK 250.00</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="cheackout-buttons">
+                    <button id="prev-button-time-picker"
+                        onclick="window.location.href='#cheackout-step2-option2'">DELIVERY
+                        TIME</button>
+                    <button id="next-button-payment-method2"
+                        onclick="window.location.href='#cheackout-step3-method2'">GO TO
                         PAYMENT</button>
                 </div>
             </div>
-        </section>
-        <div class="h100vh home-delivery-option">
-            <section class="middle-first-checkout" id="cheackout-step2">
-                <h2>Estimated Delivery Date</h2>
-                <label for=""> <input type="radio"></label>
-                <div class="split-line"></div>
-            </section>
-
-            <div class="cheackout-buttons">
-                <button id="prev-button-delivery" onclick="window.location.href='#cheackout-step1'">DELIVERY
-                    OPTIONS</button>
-                <button id="next-button-payment" onclick="window.location.href='#cheackout-step3'">GO TO
-                    PAYMENT</button>
+            <div class="h100vh" id="cheackout-step3-method2">
+                <section class="end-first-checkout">
+                    <h2>CHOOSE YOUR PAYMENT METHOD</h2>
+                    <div class="payment-section">
+                        <div class="payment-method-container">
+                            <div class="single-payment-method-container">
+                                <img src="./media/svg/visa-logo.svg" alt="">
+                                <span>Credit Card</span>
+                            </div>
+                            <div class="single-payment-method-container">
+                                <img src="./media/svg/mobile-pay-logo.svg" alt="">
+                                <span>Mobile Pay</span>
+                            </div>
+                            <div class="single-payment-method-container">
+                                <img src="./media/svg/paypal-logo.svg" alt="">
+                                <span>PayPal</span>
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <form action="" class="form-first-checkout">
+                                <div class="form-item">
+                                    <label for="firstname">Card holder name *</label>
+                                    <input type="text" class="fname">
+                                </div>
+                                <div class="form-item">
+                                    <label for="card-nr">Card number *</label>
+                                    <input type="number" class="cardnr">
+                                </div>
+                                <div class="form-item">
+                                    <label for="date"> Expire date *</label>
+                                    <input type="month" class="cardnr">
+                                </div>
+                                <div class="form-item">
+                                    <label for="date"> CVV *</label>
+                                    <input type="number" class="cardcvv">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cheackout-buttons">
+                        <button id="prev-button-summary-methode2"
+                            onclick="window.location.href='#cheackout-summary'">ORDER
+                            SUMMARY</button>
+                        <button id="next-button-finish-pay-method2"
+                            onclick="window.location.href='#checkout-final-step'">PAY</button>
+                    </div>
+                </section>
             </div>
         </div>
-        <div class="h100vh home-delivery-option">
-            <section class="middle-first-checkout" id="cheackout-step2">
-                <h2>ORDER SUMMARY</h2>
-                <div>
-                    <div>
-                        <div>
-                            <h4>Combo 1</h4>
-                            <p>(3 Medialunas w/creme, 3 Medialunas w/Dulce de Leche, 3 common Medialunas, 3 Alfajores de
-                                maizena)</p>
-                        </div>
-                        <p>DKK 250.00</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <h4>Delivery</h4>
-                            <p>Wolt</p>
-                        </div>
-                        <p>DKK 39.00</p>
-                    </div>
-                </div>
-                <div class="split-line"></div>
-                <div>
-                    <div>
-                        <h4>TOTAL</h4>
-                        <p>DKK 289.00</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="cheackout-buttons">
-                <button id="prev-button-delivery" onclick="window.location.href='#cheackout-step1'">DELIVERY
-                    OPTIONS</button>
-                <button id="next-button-payment" onclick="window.location.href='#cheackout-step3'">GO TO
-                    PAYMENT</button>
-            </div>
-        </div>
-        <div class="h100vh" id="cheackout-step3">
-            <section class="end-first-checkout">
-                <h2>CHOOSE YOUR PAYMENT METHOD</h2>
-                <div class="payment-section">
-                    <div class="payment-method-container">
-                        <div class="single-payment-method-container">
-                            <img src="./media/svg/visa-logo.svg" alt="">
-                            <span>Credit Card</span>
-                        </div>
-                        <div class="single-payment-method-container">
-                            <img src="./media/svg/mobile-pay-logo.svg" alt="">
-                            <span>Mobile Pay</span>
-                        </div>
-                        <div class="single-payment-method-container">
-                            <img src="./media/svg/paypal-logo.svg" alt="">
-                            <span>PayPal</span>
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <form action="" class="form-first-checkout">
-                            <div class="form-item">
-                                <label for="firstname">Card holder name *</label>
-                                <input type="text" class="fname">
-                            </div>
-                            <div class="form-item">
-                                <label for="card-nr">Card number *</label>
-                                <input type="number" class="cardnr">
-                            </div>
-                            <div class="form-item">
-                                <label for="date"> Expire date *</label>
-                                <input type="month" class="cardnr">
-                            </div>
-                            <div class="form-item">
-                                <label for="date"> CVV *</label>
-                                <input type="number" class="cardcvv">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="cheackout-buttons">
-                    <button id="prev-button-summary" onclick="window.location.href='#cheackout-step2'">
-                        ORDER SUMMARY</button>
-                    <button id="next-button-finish-pay"
-                        onclick="window.location.href='#checkout-final-step'">PAY</button>
-                </div>
-            </section>
-        </div>
-        <div class="h100vh">
+        <!--       <div class="h100vh">
             <section class="thanks-page" id="checkout-final-step">
                 <h1>thaaaannnnnkkkkk yoooouuuuuuu</h1>
                 <img src="/media/images/thanks.jpg" alt="">
@@ -340,7 +455,7 @@
                 </div>
 
             </section>
-        </div>
+        </div> -->
 
     </main>
 
