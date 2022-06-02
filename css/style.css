@@ -1154,6 +1154,111 @@ footer ul {
 
 /****************/
 
+/******************   Alda  ****************/
+/* ORDERING PROCESS PAGE START */
+.grid-container-ordering-process {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-item-1-op {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.grid-item-2-op {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.grid-item-3-op {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.grid-item-4-op {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5%;
+  left: 2%;
+  background-color: var(--blue);
+  color: white;
+  font-size: 27px;
+}
+.df-op {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.op h2 {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container-ordering-process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ORDERING PROCESS PAGE END */
+
+/* OUR STORY PAGE START */
+.grid-container-our-story {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(4, 1fr); */
+  justify-content: flex-start;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+  gap: 4rem;
+  grid-auto-flow: column;
+}
+
+.grid-item {
+  height: auto;
+  padding: var(--p);
+  /* position: relative; */
+}
+
+.grid-item img,
+.grid-item img,
+.grid-item img,
+.grid-item img {
+  width: 100%;
+}
+
+.grid-item-1-os {
+  grid-column: 1/-1;
+  /* grid-row: 1/2; */
+}
+.grid-item-2-os {
+  grid-column: 1/-1;
+  /* grid-row: 2/3; */
+}
+.grid-item-3-os {
+  grid-column: 1/-1;
+  /* grid-row: 3/4; */
+}
+.grid-item-4-os {
+  grid-column: 1/-1;
+  /* grid-row: 4/5; */
+}
+
+/* OUR STORY PAGE END */
+
 /* ------------------ Tablet -----------------------*/
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1644,6 +1749,48 @@ footer ul {
   }
 
   /****************/
+
+  /* OUR STORY PAGE START */
+  .grid-container-our-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+    gap: 4rem;
+    grid-auto-flow: column;
+  }
+
+  .grid-item {
+    width: 100%;
+    padding: var(--p);
+    /* position: relative; */
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .grid-item-1-os {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid-item-2-os {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .grid-item-3-os {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid-item-4-os {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  /* OUR STORY PAGE END */
 }
 
 /******************   Abdulhamid   ****************/
