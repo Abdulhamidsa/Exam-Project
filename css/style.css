@@ -1207,8 +1207,8 @@ footer ul {
 .add-alfajor {
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 76px;
 }
 
 .add-traditional {
@@ -1224,6 +1224,15 @@ footer ul {
 .add-alfajor {
   background-image: url(../media/images/alfajor.png);
 }
+
+.traditional,
+.dulce,
+.cream,
+.alfajor {
+  display: flex;
+  flex-flow: row;
+}
+
 /***********  Mobile - Combos IN Custom Page  ******************/
 
 #combos-custom-page-img-bg {
@@ -1880,14 +1889,31 @@ footer ul {
     text-align: left;
   }
 
-  .traditional,
-  .dulce,
-  .cream,
-  .alfajor {
-    display: block;
+  /** JS add images **/
+
+  .add-traditional,
+  .add-dulce,
+  .add-cream,
+  .add-alfajor {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
 
-  /****************/
+  .add-traditional {
+    background-image: url(../media/images/common.png);
+  }
+
+  .add-dulce {
+    background-image: url(../media/images/dulce.png);
+  }
+  .add-cream {
+    background-image: url(../media/images/cornstarch.png);
+  }
+  .add-alfajor {
+    background-image: url(../media/images/alfajor.png);
+  }
 }
 
 /******************   Abdulhamid   ****************/
