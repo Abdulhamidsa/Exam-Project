@@ -1652,12 +1652,21 @@ footer ul {
 /******************   Abdulhamid   ****************/
 
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
+.ss {
+  position: absolute;
+  top: 10%;
+  display: none;
+}
 html {
-  scroll-behavior: /* smooth */ ;
+  scroll-behavior: smooth;
 }
 #cheackout-method1-body {
-  overflow: hidden;
+  overflow: /* hidden */ ;
 }
+.extra-line {
+  visibility: hidden;
+}
+
 .h100vh {
   height: 100vh;
 }

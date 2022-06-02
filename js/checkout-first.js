@@ -18,23 +18,20 @@ function progressLine2() {}
 circle1.addEventListener("click", function onClick(event) {
   document.querySelector("#circle1").style.backgroundColor = "#b0b0b0";
 }); */
-const step1 = document.getElementById("next-button-cheackout1");
-step1.addEventListener("click", function onClick(event) {
+const step1method1 = document.getElementById("next-button-cheackout1");
+step1method1.addEventListener("click", function onClick(event) {
   document.querySelector("#circle2").style.backgroundColor = "var(--brown)";
   document.querySelector(".line1").style.backgroundColor = "var(--brown)";
-  document.getElementById("down").scrollIntoView(true);
+  /*   document.querySelector(".extra-line").style.visibility = "visible";
+   */
 });
 const step1method2 = document.getElementById("next-button-cheackout1-method2");
 step1method2.addEventListener("click", function onClick(event) {
   document.querySelector("#circle2").style.backgroundColor = "var(--brown)";
   document.querySelector(".line1").style.backgroundColor = "var(--brown)";
-  document.getElementById("down").scrollIntoView(true);
+  /*   document.getElementById("down").scrollIntoView(true);
+   */
 });
-/* const progress2 = document.getElementById("next");
-progress2.addEventListener("click", function onClick(event) {
-  document.querySelector("#circle2").style.backgroundColor = "black";
-});
- */
 const step2 = document.getElementById("prev-button-delivery");
 step2.addEventListener("click", function onClick(event) {
   document.querySelector("#circle2").style.backgroundColor = "#b0b0b0";
