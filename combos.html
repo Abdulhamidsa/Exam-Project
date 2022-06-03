@@ -82,57 +82,81 @@
         </div>
       </section>
 
-      <div class="pb-large">
-        <div class="container">
-          <div id="shop-grid">
-            <div class="combo">
-              <a class="combos-img-container" href="#"></a>
-              <div class="name-price-add-to-card-shop">
-                <h3>Name of the Combo</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-                <div class="price-add-to-cart">
-                  <h3 class="combo-price">Price</h3>
-                  <a href="#" class="links">ADD TO CART</a>
-                </div>
-              </div>
-            </div>
-            <div class="combo">
-              <a class="combos-img-container" href="#"></a>
-              <div class="name-price-add-to-card-shop">
-                <h3>Name of the Combo</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-                <div class="price-add-to-cart">
-                  <h3 class="combo-price">Price</h3>
-                  <a href="#" class="links">ADD TO CART</a>
-                </div>
-              </div>
-            </div>
-            <div class="combo">
-              <a class="combos-img-container" href="#"></a>
-              <div class="name-price-add-to-card-shop">
-                <h3>Name of the Combo</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <div class="price-add-to-cart">
-                  <h3 class="combo-price">Price</h3>
-                  <a href="#" class="links">ADD TO CART</a>
-                </div>
-              </div>
+      <!--*****  Template *******-->
+
+      <template id="cartTemplate">
+        <div class="combo">
+          <a id="myBtn" class="combos-img-container" href="#"></a>
+          <div class="name-price-add-to-card-shop">
+            <h3 class="title">Name of the Combo</h3>
+            <p class="excerpt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+            <div class="price-add-to-cart">
+              <h3 class="combo-price">Price</h3>
+              <a href="#" class="links">ADD TO CART</a>
             </div>
           </div>
         </div>
+      </template>
+
+      <!--********   Shop Grid ***********-->
+
+      <div class="pb-large">
+        <div class="container">
+          <div id="shop-grid">
+            <!-- Combos come here -->
+          </div>
+        </div>
       </div>
+
+      <!--************    Modal   ******************-->
+
+      <section>
+        <template id="modalTemplate">
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content - Combo pictures -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-galery-combos">
+                <div class="image-modal">
+                  <img src="media/images/combo-3.png" alt="image-combo" />
+                </div>
+                <div class="thumbs-container">
+                  <ul class="thumbs">
+                    <li>
+                      <img
+                        src="media/images/combo-3.png"
+                        alt="image-combo"
+                        class="thumb"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="media/images/combo-3.png"
+                        alt="image-combo"
+                        class="thumb"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="media/images/combo-3.png"
+                        alt="image-combo"
+                        class="thumb"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <!-- <p>Some text in the Modal..</p> -->
+              </div>
+            </div>
+            <!-- The Modal Cnotent Ends -->
+          </div>
+        </template>
+      </section>
 
       <section id="custom-combos-page-img-bg">
         <div class="custom-combos-page-img-overlay">
@@ -143,7 +167,7 @@
               </div> -->
               <div class="custom-combos-page-text center-text">
                 <div>
-                  <h1>Custom you order.</h1>
+                  <h1>Custom your order.</h1>
                   <p>Lorem Ipmsum ...</p>
                   <a href="#" class="links-yellow m-2-auto">Custom now</a>
                 </div>
@@ -205,5 +229,6 @@
     </footer>
 
     <script src="js/functions.js"></script>
+    <script src="js/combos.js"></script>
   </body>
 </html>
