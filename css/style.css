@@ -514,6 +514,14 @@ a.mainmenu:active {
   margin: 2rem auto;
 }
 
+a.links:link,
+a.links-black:link,
+a.links-yellow:link,
+a.links-blue:link,
+a.links-brown:link {
+  text-decoration: none;
+}
+
 .links {
   /* color: var(--brown); */
   /* border: 2px solid var(--brown); */
@@ -546,6 +554,44 @@ a.mainmenu:active {
 .links-brown {
   color: var(--yellow);
   background-color: var(--brown);
+  /* color: var(--blue);
+  border: 2px solid var(--blue); */
+}
+
+/** Links Hover **/
+
+a.links:hover {
+  /* color: var(--brown);*/
+  /* border: 2px solid var(--brown); */
+  color: var(--brown);
+  background-color: var(--yellow);
+  margin: 0 auto;
+}
+
+a.links-yellow:hover {
+  color: var(--yellow);
+  background-color: var(--black);
+  /* background-color: var(--yellow); */
+  /* border: 2px solid var(--yellow); */
+}
+
+a.links-black:hover {
+  color: var(--black);
+  background-color: var(--yellow);
+  /* color: var(--black); */
+  /* border: 2px solid var(--black); */
+}
+
+a.links-blue:hover {
+  color: var(--white);
+  background-color: var(--black);
+  /* color: var(--blue); */
+  /* border: 2px solid var(--blue); */
+}
+
+a.links-brown:hover {
+  color: var(--brown);
+  background-color: var(--yellow);
   /* color: var(--blue);
   border: 2px solid var(--blue); */
 }
@@ -1154,83 +1200,27 @@ footer ul {
 
 /****************/
 
-/******************   Alda  ****************/
-/* ORDERING PROCESS PAGE START */
+/******************   Alda ****************/
+
+/* Mobile OUR STORY PAGE START */
+.grid-container-our-story,
 .grid-container-ordering-process {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-}
-
-.grid-item-1-op {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.grid-item-2-op {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.grid-item-3-op {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.grid-item-4-op {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.step-circle {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 2.5%;
-  left: 2%;
-  background-color: var(--blue);
-  color: white;
-  font-size: 27px;
-}
-.df-op {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.op h2 {
-  font-size: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .grid-container-ordering-process {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* ORDERING PROCESS PAGE END */
-
-/* OUR STORY PAGE START */
-.grid-container-our-story {
   display: grid;
   grid-template-columns: 1fr;
   /* grid-template-rows: repeat(4, 1fr); */
-  justify-content: flex-start;
-  justify-items: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   text-align: left;
   gap: 4rem;
-  grid-auto-flow: column;
+  margin: var(--mtb-large);
+  grid-auto-flow: row;
 }
 
 .grid-item {
-  height: auto;
   padding: var(--p);
-  /* position: relative; */
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
 }
 
 .grid-item img,
@@ -1240,24 +1230,135 @@ footer ul {
   width: 100%;
 }
 
-.grid-item-1-os {
+.grid-item-1-os,
+.grid-item-1-op {
   grid-column: 1/-1;
-  /* grid-row: 1/2; */
 }
-.grid-item-2-os {
+.grid-item-2-os,
+.grid-item-2-op {
   grid-column: 1/-1;
-  /* grid-row: 2/3; */
 }
-.grid-item-3-os {
+.grid-item-3-os,
+.grid-item-3-op {
   grid-column: 1/-1;
-  /* grid-row: 3/4; */
 }
-.grid-item-4-os {
+.grid-item-4-os,
+.grid-item-4-op {
   grid-column: 1/-1;
-  /* grid-row: 4/5; */
 }
 
-/* OUR STORY PAGE END */
+/* Mobile ORDERING PROCESS PAGE START */
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--font-h);
+  font-weight: 800;
+  z-index: 3;
+  position: absolute;
+  /* padding: var(--p); */
+  margin: var(--m);
+}
+
+.df-op {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .op h2 {
+  font-size: 2rem;
+} */
+
+/* Mobile ORDERING PROCESS PAGE END */
+
+/* Mobile Blog page*/
+
+.article_block {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+/* .article_cover {
+  cursor: pointer;
+} */
+
+.article_cover img {
+  width: 100%;
+  /* min-width: 100%; */
+}
+
+.title-excerpt-article-block {
+  padding: var(--p);
+  margin: var(--mtb);
+}
+
+#blog_gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  justify-content: flex-start;
+  align-content: flex-start;
+  grid-auto-flow: row;
+}
+
+#related-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 2rem;
+  padding: var(--plr);
+}
+
+.article-related {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin: var(--mtb);
+}
+
+.cover-article-related {
+  width: 100%;
+}
+
+.cover-article-related img {
+  width: 100%;
+}
+
+/* Article page */
+
+.article-container {
+  /* width: 100%; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.article_image img {
+  width: 100%;
+}
+
+.article_text {
+  padding: var(--plr);
+  margin: var(--mtb-medium);
+}
+
+.published {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--ptb-medium);
+}
 
 /* ------------------ Tablet -----------------------*/
 
@@ -1460,6 +1561,44 @@ footer ul {
     color: var(--yellow);
     background-color: var(--brown);
     margin: 0 auto;
+  }
+
+  /** Links Hover **/
+
+  a.links:hover {
+    /* color: var(--brown);*/
+    /* border: 2px solid var(--brown); */
+    color: var(--brown);
+    background-color: var(--yellow);
+    margin: 0 auto;
+  }
+
+  a.links-yellow:hover {
+    color: var(--yellow);
+    background-color: var(--black);
+    /* background-color: var(--yellow); */
+    /* border: 2px solid var(--yellow); */
+  }
+
+  a.links-black:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+    /* color: var(--black); */
+    /* border: 2px solid var(--black); */
+  }
+
+  a.links-blue:hover {
+    color: var(--white);
+    background-color: var(--black);
+    /* color: var(--blue); */
+    /* border: 2px solid var(--blue); */
+  }
+
+  a.links-brown:hover {
+    color: var(--brown);
+    background-color: var(--yellow);
+    /* color: var(--blue);
+  border: 2px solid var(--blue); */
   }
 
   /******* Desktop Containers / Sections / Headings / Breadcrumbs****************************/
@@ -1748,16 +1887,15 @@ footer ul {
     text-align: left;
   }
 
-  /****************/
+  /******** DESKTOP OUR STORY PAGE START ********/
 
-  /* OUR STORY PAGE START */
-  .grid-container-our-story {
+  .grid-container-our-story,
+  .grid-container-ordering-process {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    justify-content: flex-start;
-    justify-items: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     text-align: left;
     gap: 4rem;
     grid-auto-flow: column;
@@ -1765,32 +1903,98 @@ footer ul {
 
   .grid-item {
     width: 100%;
-    padding: var(--p);
-    /* position: relative; */
+    padding: 0;
+    display: flex;
+    gap: 1rem;
   }
 
-  .grid-item {
+  .grid-item-1-os,
+  .grid-item-1-op {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid-item-2-os,
+  .grid-item-2-op {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .grid-item-3-os,
+  .grid-item-3-op {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid-item-4-os,
+  .grid-item-4-op {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  /******* Desktop ORDERING PROCESS *****/
+
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: white;
+    font-size: 27px;
+    z-index: 3;
+    position: absolute;
+    /* padding: var(--p); */
+    margin: var(--m);
+  }
+
+  .df-op {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Desktop OUR STORY PAGE END */
+  /* Desktop ORDERING PROCESS PAGE END */
+
+  /* Desktop Blog page*/
+
+  /*** Desktop Blog page Desktop view *******/
+
+  #blog_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    justify-content: flex-start;
+    align-content: flex-start;
+    grid-auto-flow: row;
+  }
+
+  .title-excerpt-article-block {
+    padding: 0;
+    margin: var(--mtb-medium);
+  }
+
+  #related-articles {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* Article page */
+
+  .article-container {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .article_image img {
     width: 100%;
   }
 
-  .grid-item-1-os {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  .article_text {
+    padding: 0;
   }
-  .grid-item-2-os {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .grid-item-3-os {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .grid-item-4-os {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  /* OUR STORY PAGE END */
 }
 
 /******************   Alda  ****************/
