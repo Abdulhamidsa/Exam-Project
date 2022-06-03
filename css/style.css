@@ -840,7 +840,7 @@ a.combos-img-container:link,
 a.combos-img-container:visited,
 a.combos-img-container:active,
 a.combos-img-container:focus {
-  background-image: url("../media/images/combo-1.png");
+  /* background-image: url("../media/images/combo-1.png"); */
   cursor: pointer;
 }
 

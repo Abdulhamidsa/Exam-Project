@@ -22,6 +22,9 @@ function showProduct(combo) {
   copy.querySelector(".title").textContent = combo.title.rendered;
   copy.querySelector(".excerpt").textContent = combo.description;
   copy.querySelector(".combo-price").textContent = combo.price;
+  copy.querySelector(
+    ".combos-img-container"
+  ).style.backgroundImage = `url(${combo.image.guid})`;
 
   // copy.querySelector(".test").src = bag.thumb1.guid;
 
@@ -38,7 +41,7 @@ function showProduct(combo) {
 
   //   copy
   //     .querySelector(".price-add-to-card a")
-  //     .setAttribute("href", `product.html?id=${post.id}`);
+  //     .setAttribute("href", `combo.html?id=${post.id}`);
 
   const parent = document.querySelector("#shop-grid");
   parent.appendChild(copy);
