@@ -1404,6 +1404,7 @@ footer ul {
 .df-op {
   display: flex;
   justify-content: space-around;
+  flex-flow: column;
 }
 
 /* .op h2 {
@@ -2157,5 +2158,115 @@ footer ul {
   }
   .add-alfajor {
     background-image: url(../media/images/alfajor.png);
+  }
+
+  /******** DESKTOP OUR STORY PAGE START ********/
+
+  .grid-container-our-story,
+  .grid-container-ordering-process {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    gap: 4rem;
+    grid-auto-flow: column;
+  }
+
+  .grid-item {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .grid-item-1-os,
+  .grid-item-1-op {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid-item-2-os,
+  .grid-item-2-op {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .grid-item-3-os,
+  .grid-item-3-op {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid-item-4-os,
+  .grid-item-4-op {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  /******* Desktop ORDERING PROCESS *****/
+
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: white;
+    font-size: 27px;
+    z-index: 3;
+    position: absolute;
+    /* padding: var(--p); */
+    margin: var(--m);
+  }
+
+  .df-op {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+  }
+
+  /* Desktop OUR STORY PAGE END */
+  /* Desktop ORDERING PROCESS PAGE END */
+
+  /* Desktop Blog page*/
+
+  /*** Desktop Blog page Desktop view *******/
+
+  #blog_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    justify-content: flex-start;
+    align-content: flex-start;
+    grid-auto-flow: row;
+  }
+
+  .title-excerpt-article-block {
+    padding: 0;
+    margin: var(--mtb-medium);
+  }
+
+  #related-articles {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* Article page */
+
+  .article-container {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .article_image img {
+    width: 100%;
+  }
+
+  .article_text {
+    padding: 0;
   }
 }
