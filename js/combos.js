@@ -32,11 +32,11 @@ function showProduct(combo) {
     .querySelector(".combos-img-container")
     .addEventListener("click", openModal);
 
+  document.querySelector(".close").addEventListener("click", closeModal);
+
   // copy
   //   .querySelector(".price-add-to-card a")
   //   .addEventListener("click", openModal);
-
-  // document.querySelector(".close").addEventListener("click", closeModal);
 
   // copy.querySelector(
   //   ".combo-img-container"
