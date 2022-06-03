@@ -115,45 +115,47 @@
       <!--************    Modal   ******************-->
 
       <section>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content - Combo pictures -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-galery-combos">
-              <div class="image-modal">
-                <img src="media/images/combo-3.png" alt="image-combo" />
+        <template id="modalTemplate">
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content - Combo pictures -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-galery-combos">
+                <div class="image-modal">
+                  <img src="media/images/combo-3.png" alt="image-combo" />
+                </div>
+                <div class="thumbs-container">
+                  <ul class="thumbs">
+                    <li>
+                      <img
+                        src="media/images/combo-3.png"
+                        alt="image-combo"
+                        class="thumb"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="media/images/combo-3.png"
+                        alt="image-combo"
+                        class="thumb"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="media/images/combo-3.png"
+                        alt="image-combo"
+                        class="thumb"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <!-- <p>Some text in the Modal..</p> -->
               </div>
-              <div class="thumbs-container">
-                <ul class="thumbs">
-                  <li>
-                    <img
-                      src="media/images/combo-3.png"
-                      alt="image-combo"
-                      class="thumb"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="media/images/combo-3.png"
-                      alt="image-combo"
-                      class="thumb"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="media/images/combo-3.png"
-                      alt="image-combo"
-                      class="thumb"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <!-- <p>Some text in the Modal..</p> -->
             </div>
+            <!-- The Modal Cnotent Ends -->
           </div>
-          <!-- The Modal Cnotent Ends -->
-        </div>
+        </template>
       </section>
 
       <section id="custom-combos-page-img-bg">

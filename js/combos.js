@@ -26,28 +26,27 @@ function showProduct(combo) {
     ".combos-img-container"
   ).style.backgroundImage = `url(${combo.image.guid})`;
 
-  // copy.querySelector(".test").src = bag.thumb1.guid;
-
-  //****** Modal ******/
+  //********* Modal *********/
 
   copy
     .querySelector(".combos-img-container")
     .addEventListener("click", openModal);
-  document.querySelector(".close").addEventListener("click", closeModal);
 
-  copy.querySelector(
-    ".combo a"
-  ).style.backgroundImage = `url(${combo.image.guid})`;
+  // copy
+  //   .querySelector(".price-add-to-card a")
+  //   .addEventListener("click", openModal);
 
-  //   copy
-  //     .querySelector(".price-add-to-card a")
-  //     .setAttribute("href", `combo.html?id=${post.id}`);
+  // document.querySelector(".close").addEventListener("click", closeModal);
+
+  // copy.querySelector(
+  //   ".combo-img-container"
+  // ).style.backgroundImage = `url(${combo.image.guid})`;
 
   const parent = document.querySelector("#shop-grid");
   parent.appendChild(copy);
 }
 
-//Geting the Modal from the DOM
+/////////////////Geting the Modal from the DOM
 var modal = document.getElementById("myModal");
 
 // When clicks the image of the combo, open the modal
