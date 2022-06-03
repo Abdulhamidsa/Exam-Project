@@ -1652,11 +1652,6 @@ footer ul {
 /******************   Abdulhamid   ****************/
 
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
-/* .ss {
-  position: absolute;
-  top: 10%;
-  display: none;
-} */
 html {
   scroll-behavior: smooth;
 }
@@ -1680,10 +1675,6 @@ html {
   justify-content: center;
   padding: 5rem 1rem 1rem 0rem;
   margin-bottom: 1rem;
-}
-.section-frist-cheackout {
-  /*   margin: var(--mtb-large);
- */
 }
 .section-frist-cheackout :nth-child(2) {
   display: flex;
@@ -1713,6 +1704,7 @@ html {
   padding: 1.5rem 4rem 1.5rem;
   cursor: pointer;
 }
+/* SLIDER PROGRESS BAR START*/
 .slider-checkout {
   position: fixed;
   top: 30%;
@@ -1753,6 +1745,7 @@ html {
 #circle5 {
   top: 90%;
 }
+/* SLIDER PROGRESS BAR END */
 .delivery-options {
   display: flex;
   flex-direction: row;
@@ -1778,7 +1771,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  gap: rem;
 }
 .middle-first-checkout > div > div {
   display: flex;
@@ -1812,7 +1804,7 @@ html {
 .middle-first-checkout {
   padding-top: 10rem;
 }
-/* PAYMENT METHODS */
+/* PAYMENT METHODS START */
 .payment-method-container {
   display: flex;
   width: 100%;
@@ -1873,11 +1865,11 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
 }
+/* PAYMENT METHODS END */
 .thanks-page img {
   width: 30%;
   height: 60vh;
   margin: auto;
-  padding: auto;
 }
 .thanks-page {
   display: flex;
@@ -1885,20 +1877,9 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   margin: var(--mtb-large);
 }
-#method1 {
-  display: ;
-}
-#method2 {
-  /*   display: none;
- */
-}
 .hidden {
   display: none;
 }
-/* #delivery-info2 {
-  position: absolute;
-}  */
-/* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
 .table-time td {
   padding: var(--p);
 }
