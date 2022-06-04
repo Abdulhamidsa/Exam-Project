@@ -974,7 +974,7 @@ a.combos-img-container:hover {
 
 /* The Modal (background) */
 .modal {
-  /* display: none; Hidden by default */
+  display: none; /*Hidden by default*/
   position: fixed; /* Stay in place */
   z-index: 999; /* Sit on top */
   padding: var(--p);
@@ -1970,7 +1970,7 @@ footer ul {
 
   /* The Modal (background) */
   .modal {
-    display: flex; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
     padding: var(--p);
@@ -2429,6 +2429,7 @@ footer ul {
 /******************   Abdulhamid   ****************/
 
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
+
 html {
   scroll-behavior: smooth;
 }

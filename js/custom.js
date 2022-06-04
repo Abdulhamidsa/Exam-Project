@@ -1,16 +1,10 @@
-let = traditional = 0;
-let = dulce = 0;
-let = cream = 0;
-let = alfajor = 0;
-
 let = amountTraditional = 0;
 let = amountCream = 0;
 let = amountDulce = 0;
 let = amountAlfajor = 0;
 
-//FUNCTIONS
+//let's Start
 start();
-// deleteProduct();
 
 //Pick Up Pastry
 
@@ -26,7 +20,7 @@ function start() {
 
 //Function create Div in the grid.
 
-//Handle Functions
+//Functions Loading Pastries
 
 function loadTraditional() {
   console.log("Traditional Function Works");
@@ -74,3 +68,8 @@ function loadAlfajor() {
 // document.querySelector(".description-amount-dulce").textContent = blank;
 // document.querySelector(".description-amount-cream").textContent = blank;
 // document.querySelector(".description-amount-alfajor").textContent = blank;
+
+// let = traditional = 0;
+// let = dulce = 0;
+// let = cream = 0;
+// let = alfajor = 0;
