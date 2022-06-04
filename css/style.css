@@ -1427,6 +1427,14 @@ footer ul {
   margin: var(--mtb);
 }
 
+.elipsis {
+  white-space: wrap;
+  height: 9rem;
+  /* border: 1px solid #000000; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #blog_gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -1481,9 +1489,9 @@ footer ul {
 .published {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  padding: var(--ptb-medium);
+  padding: var(--ptb);
 }
 
 /******** Mobile Video Header *******/
@@ -2330,7 +2338,8 @@ footer ul {
   }
 
   #related-articles {
-    width: 50%;
+    width: 80%;
+    grid-template-columns: repeat(4, auto);
     margin: 0 auto;
   }
 
@@ -2350,6 +2359,14 @@ footer ul {
 
   .article_text {
     padding: 0;
+  }
+
+  .published {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--ptb);
   }
 
   /**** Desktop Video Header *******/

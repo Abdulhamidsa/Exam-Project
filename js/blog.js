@@ -25,14 +25,14 @@ function showArticle(art) {
   copy.querySelector(".excerpt").textContent = art.excerpt.rendered;
   copy.querySelector(".article_cover a img").src = art.image.guid;
 
-  const parent = document.querySelector("#blog_gallery");
-  parent.appendChild(copy);
-
-  document
-    .querySelector(".title-excerpt-article-block .link-article a")
+  copy
+    .querySelector(".link-article a")
     .setAttribute("href", `article.html?id=${art.id}`);
 
-  document
+  copy
     .querySelector(".article_cover a")
     .setAttribute("href", `article.html?id=${art.id}`);
+
+  const parent = document.querySelector("#blog_gallery");
+  parent.appendChild(copy);
 }
