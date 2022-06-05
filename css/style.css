@@ -1322,6 +1322,41 @@ footer ul {
   align-content: center;
   text-align: center;
 }
+.description-custom-page span {
+  background-color: var(--yellow);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.description-text-dulce,
+.description-text-cream,
+.description-text-traditional,
+.description-text-alfajor {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.custom-page-container {
+  padding-bottom: 5rem;
+}
+
+.description-amount-dulce,
+.description-amount-cream,
+.description-amount-traditional,
+.description-amount-alfajor {
+  font-size: 2rem;
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 2px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.description-amount-dulce,
+.description-amount-cream,
+.description-amount-traditional,
+.description-amount-alfajor,
+::after {
+  margin-right: 1rem;
+}
 
 /** JS add images **/
 
@@ -2524,7 +2559,7 @@ footer ul {
 
   .hero-title-text {
     width: 50%;
-    margin-top: -7rem;
+    margin-top: -5rem;
     text-align: center;
     /* display: none; */
   }
