@@ -1682,7 +1682,7 @@ footer ul {
   nav {
     display: grid;
     grid-template-columns: 25% 75%;
-    width: 112%;
+
     align-self: center;
   }
   .logo {
