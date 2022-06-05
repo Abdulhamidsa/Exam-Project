@@ -2,7 +2,7 @@
 
 /*font-family: 'Cabin', sans-serif;*/
 
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800&family=Cabin:ital,wght@1,400;1,500;1,600;1,700&family=Katibeh&family=Lexend+Giga:wght@700;800;900&family=Manrope:wght@400;500;600;700&display=swap");
 
 /*font-family: 'Abril Fatface', cursive;*/
 
@@ -12,15 +12,15 @@
 
 :root {
   /*fonts & colours*/
-  --font-h: "dashiell-fine", serif;
+  --font-h: "Lexend Giga", sans-serifu;
   --font-t: "Cabin", sans-serif;
   --font-sm: 0.85rem;
 
   /*Colours*/
   --black: #000000;
-  --blue: #9ec5e8; /*baby blue eyes*/
-  --brown: #7b4e3c; /*Brown Sugar*/
-  --yellow: #fce6bd; /*Navajo white*/
+  --blue: #bbd5ecc4; /*baby blue eyes*/
+  --brown: #2c201a; /*Brown Sugar*/
+  --yellow: #f8e0bb; /*Navajo white*/
   --white: #f4eee5; /*Linen*/
 
   /*margin*/
@@ -160,6 +160,13 @@ a.logo:focus {
   color: var(--brown);
   text-decoration: none;
 }
+.logo {
+  width: 18%;
+  position: absolute;
+  top: -9.5%;
+  left: 3%;
+  z-index: 1000;
+}
 
 span {
   font-family: var(--font-h);
@@ -180,7 +187,7 @@ body {
   line-height: 24px;
   font-family: "Cabin", sans-serif;
   word-wrap: break-word;
-  background-color: var(--white);
+  background-color: var(--brown);
 }
 
 /**********   Colours & Backgrounds Colours   ***********************/
@@ -239,7 +246,7 @@ header {
   /* position: relative; */
   width: 100%;
   height: auto;
-  background-color: var(--white);
+  background-color: var();
 }
 
 nav {
@@ -249,7 +256,7 @@ nav {
   grid-auto-flow: column;
   justify-content: center;
   /* align-items: baseline; */
-  background-color: var(--white);
+  background-color: var(--brown);
   z-index: 999;
 }
 
@@ -266,7 +273,6 @@ nav {
 .icons-nav-desk {
   display: none;
 }
-
 .hamburger,
 .cart {
   /*Mobile*/
@@ -295,12 +301,13 @@ nav {
 }
 
 #logo img {
-  width: 8rem;
+  width: 10%;
+  margin-top: 10rem;
 }
 
 .button-nav {
   border: none;
-  background-color: var(--brown);
+  background-color: var(--white);
   padding: var(--p);
   padding: 10px 18px;
   text-align: center;
@@ -330,7 +337,7 @@ a.button-nav:visited {
   align-content: center;
   text-align: left;
   padding: var(--ptb);
-  background-color: var(--white);
+  background-color: var(--brown);
   height: auto;
 }
 
@@ -354,7 +361,7 @@ a.button-nav:visited {
 #mainmenu li a.mainmenu:link,
 a.mainmenu:visited,
 a.mainmenu:active {
-  color: var(--brown);
+  color: var(--white);
   text-decoration: none;
   font-weight: 400;
   padding: var(--pl);
@@ -499,14 +506,12 @@ a.mainmenu:active {
 .links-blue,
 .links-brown {
   display: flex;
-  width: fit-content;
+  min-width: fit-content;
   border: none;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  border-radius: var(--border-radius-100);
   cursor: pointer;
   margin: 2rem auto;
 }
@@ -528,10 +533,9 @@ a.links-brown:link {
 }
 
 .links-yellow {
-  color: var(--black);
-  background-color: var(--yellow);
-  /* background-color: var(--yellow); */
-  /* border: 2px solid var(--yellow); */
+  color: var(--yellow);
+  font-weight: bolder;
+  background-image: url("../media/svg/button_1.svg;");
 }
 
 .links-black {
@@ -550,7 +554,8 @@ a.links-brown:link {
 
 .links-brown {
   color: var(--yellow);
-  background-color: var(--brown);
+  font-weight: bolder;
+  background-image: url("../media/svg/button-brown.svg");
   /* color: var(--blue);
   border: 2px solid var(--blue); */
 }
@@ -566,8 +571,10 @@ a.links:hover {
 }
 
 a.links-yellow:hover {
-  color: var(--yellow);
-  background-color: var(--black);
+  transform: scale(1.1);
+
+  transition: 0.1s;
+
   /* background-color: var(--yellow); */
   /* border: 2px solid var(--yellow); */
 }
@@ -587,8 +594,9 @@ a.links-blue:hover {
 }
 
 a.links-brown:hover {
-  color: var(--brown);
-  background-color: var(--yellow);
+  transform: scale(1.1);
+
+  transition: 0.1s;
   /* color: var(--blue);
   border: 2px solid var(--blue); */
 }
@@ -627,13 +635,13 @@ a.links-brown:hover {
   height: 400px;
 }
 
-/* #overlay {
-  background-color: rgba(0, 0, 0, 0.2);
+#overlay {
+  background-color: var(--brown);
   width: 100vw;
   height: 100vh;
   z-index: 1;
   position: absolute;
-} */
+}
 
 .hero {
   background-color: var(--brown);
@@ -724,6 +732,11 @@ section h2,
 section h1 {
   margin-bottom: 2rem;
 }
+.itl {
+  font-style: italic;
+  font-family: var(--font-h);
+  font-size: 3rem;
+}
 
 .heading {
   width: 100%;
@@ -797,6 +810,37 @@ section h1 {
 
 #shortcuts {
   background-color: var(--brown);
+}
+.index-wb {
+  background-color: var(--white);
+}
+.index-bb {
+  background-color: var(--brown);
+}
+.index-bb p {
+  background-color: var(--brown);
+  padding: 1rem;
+  color: var(--white);
+}
+
+.index-wb p {
+  background-color: var(--white);
+  padding: 1rem;
+  color: var(--brown);
+}
+
+.index-wb h2 {
+  padding: 1rem;
+  color: var(--brown);
+  font-size: 2.5rem;
+}
+
+.index-bb h2 {
+  padding: 1rem;
+  color: var(--yellow);
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
 }
 .shortcuts {
   width: 100%;
@@ -1501,7 +1545,7 @@ footer ul {
 #overlay {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 101.5vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -1528,10 +1572,12 @@ footer ul {
 }
 
 .hero-text p {
-  font-size: 1.125rem;
+  font-size: 2.5rem;
   line-height: normal;
-  font-weight: 400;
+  font-weight: bolder;
   color: var(--white);
+  font-family: var(--font-h);
+  letter-spacing: -3px;
 }
 
 .hero-text h1 {
@@ -1643,7 +1689,7 @@ footer ul {
   #menu li a.menu:link,
   a.menu:visited,
   a.menu:active {
-    color: var(--brown);
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
     /* letter-spacing: 0.1rem; */
@@ -1656,7 +1702,7 @@ footer ul {
   #menu li a.button:link,
   a.button:visited,
   a.button:active {
-    background-color: var(--brown);
+    background-color: var(--white);
     border: none;
     color: var(--white);
     padding: 10px 17px;
@@ -1755,16 +1801,28 @@ footer ul {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    border-radius: var(--border-radius-100);
     cursor: pointer;
     margin: 2rem 0;
+    background-image: url("../media/svg/button-brown.svg");
+    align-self: center;
+    justify-self: center;
+    margin-left: 30%;
   }
 
   .links-yellow {
     color: var(--black);
-    background-color: var(--yellow);
+
     /* color: var(--yellow); */
     /* border: 2px solid var(--yellow); */
+
+    color: var(--yellow);
+    background-image: url("/media/svg/button_1.svg");
+    background-repeat: no-repeat;
+
+    background-size: 85%;
+    background-position: center;
+
+    padding: 8%;
   }
 
   .links-black {
@@ -1782,8 +1840,15 @@ footer ul {
   }
 
   .links-brown {
-    color: var(--yellow);
-    background-color: var(--brown);
+    color: var(--brown);
+    background-image: url("/media/svg/button-brown.svg");
+    background-repeat: no-repeat;
+    min-width: fit-content;
+    max-width: fit-content;
+    background-size: 90%;
+    background-position: center;
+    padding: 8%;
+
     /* color: var(--blue);
     border: 2px solid var(--blue); */
   }
@@ -1801,14 +1866,12 @@ footer ul {
   a.links:hover {
     /* color: var(--brown);*/
     /* border: 2px solid var(--brown); */
-    color: var(--brown);
+    color: var(--yellow);
     background-color: var(--yellow);
     margin: 0 auto;
   }
 
   a.links-yellow:hover {
-    color: var(--yellow);
-    background-color: var(--black);
     /* background-color: var(--yellow); */
     /* border: 2px solid var(--yellow); */
   }
@@ -1829,7 +1892,7 @@ footer ul {
 
   a.links-brown:hover {
     color: var(--brown);
-    background-color: var(--yellow);
+
     /* color: var(--blue);
   border: 2px solid var(--blue); */
   }
@@ -1860,7 +1923,7 @@ footer ul {
   }
 
   .headline {
-    width: 50%;
+    width: 90%;
   }
 
   .headline-sustainability {
@@ -2365,6 +2428,10 @@ footer ul {
     flex-direction: row;
     flex-wrap: wrap;
     word-wrap: break-word;
+    padding-top: 5%;
+  }
+  .hero-text .links-yellow {
+    margin: 0;
   }
 
   .hero-title-text {
@@ -2372,10 +2439,17 @@ footer ul {
     text-align: center;
     /* display: none; */
   }
+  .hero-title-text p {
+    font-size: 3.5rem;
+    font-family: var(--font-h);
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 4%;
+  }
 
   .hero-buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: var(--ml);
     width: 50%;
     /* font-size: 0.75rem; */
