@@ -129,6 +129,7 @@ h4 {
   line-height: normal;
   margin: var(--mb);
   font-weight: 800;
+  margin-top: 2rem;
   word-break: normal;
 }
 
@@ -1573,7 +1574,7 @@ footer ul {
 #overlay {
   position: absolute;
   width: 100vw;
-  height: 101.5vh;
+  height: 42.5vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -1658,6 +1659,14 @@ footer ul {
 /***************** Desktop Header / Nav / Menu ***********/
 
 @media only screen and (min-width: 1200px) {
+  #overlay {
+    position: absolute;
+    width: 100vw;
+    height: 101.5vh;
+    background-color: var(--brown);
+    opacity: 0.4;
+    z-index: 1;
+  }
   h1 {
     font-size: 3.5rem;
   }
@@ -2041,6 +2050,22 @@ footer ul {
   }
 
   /*************  Desktop Combos Page  ******************/
+
+  .title {
+    background-color: var(--white);
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+  .combo-price {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    font-weight: bolder;
+    background-color: var(--brown);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    font-family: var(--font-t);
+  }
 
   .custom-combos-page {
     flex-flow: row;
