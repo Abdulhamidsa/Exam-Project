@@ -2056,13 +2056,18 @@ footer ul {
     padding: 1rem;
     font-size: 1.6rem;
   }
+  .excerpt {
+    font-size: 1.4rem;
+    color: black;
+  }
   .combo-price {
     font-size: 1.5rem;
     color: var(--yellow);
     font-weight: bolder;
     background-color: var(--brown);
     padding: 1rem;
-    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     font-family: var(--font-t);
   }
