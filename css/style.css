@@ -138,7 +138,7 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -363,7 +363,7 @@ a.button-nav:visited {
 #mainmenu li a.mainmenu:link,
 a.mainmenu:visited,
 a.mainmenu:active {
-  color: var(--white);
+  color: var(--yellow);
   text-decoration: none;
   font-weight: 400;
   padding: var(--pl);
@@ -583,7 +583,7 @@ a.links-brown:link {
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: center;
-  padding: 8%;
+  padding: 10%;
 }
 
 /** Links Hover **/
@@ -1243,8 +1243,8 @@ footer ul {
   align-content: center;
   justify-items: center;
   align-items: center;
-  background-color: var(--yellow);
-  border: 1px solid var(--brown);
+  background-color: var(--white);
+  border: 5px solid var(--brown);
   gap: 1rem;
   padding: var(--p);
 }
@@ -1281,6 +1281,8 @@ footer ul {
   margin: 0 auto;
   font-size: 0.75rem;
   line-height: normal;
+  font-weight: bolder;
+  background-color: var(--yellow);
 }
 
 .container-grid-and-order-custom-page {
@@ -1657,7 +1659,7 @@ footer ul {
 
 @media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   h2 {
@@ -1729,7 +1731,7 @@ footer ul {
   }
 
   #menu li a.menu:hover {
-    color: var(--black);
+    color: var(--yellow);
   }
 
   #menu li a.button:link,
@@ -1839,7 +1841,8 @@ footer ul {
     background-image: url("../media/svg/button-brown.svg");
     align-self: center;
     justify-self: center;
-    margin-left: 30%;
+    padding: 4%;
+    margin-left: 25%;
   }
 
   .links-yellow {
@@ -1880,7 +1883,7 @@ footer ul {
     max-width: fit-content;
     background-size: 90%;
     background-position: center;
-    padding: 8%;
+    padding: 10%;
 
     /* color: var(--blue);
     border: 2px solid var(--blue); */
@@ -2001,7 +2004,6 @@ footer ul {
 
   .shortcuts {
     flex-direction: row;
-    margin: var(--mtb-medium);
   }
 
   .shortcuts .shortcut-image {
@@ -2265,10 +2267,11 @@ footer ul {
     align-content: center;
     justify-items: center;
     align-items: center;
-    background-color: var(--yellow);
+    background-color: var(--white);
     gap: 1rem;
+
     padding: var(--p);
-    border: 1px solid var(--brown);
+    border: 7px solid var(--brown);
   }
 
   .custom-page-single-products {
@@ -2294,6 +2297,8 @@ footer ul {
     margin: 0 auto;
     font-size: 1rem;
     line-height: normal;
+    font-weight: bolder;
+    background-color: var(--yellow);
   }
 
   .container-grid-and-order-custom-page {
@@ -2473,11 +2478,13 @@ footer ul {
     /* display: none; */
   }
   .hero-title-text p {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-family: var(--font-h);
     font-weight: bolder;
     text-align: left;
-    padding-left: 4%;
+    padding-left: 8%;
+    padding-bottom: 3rem;
+    word-wrap: normal;
   }
 
   .hero-buttons {
