@@ -397,6 +397,14 @@ a.mainmenu:active {
   background-image: url("../media/images/close.jpg");
 }
 
+.arrows {
+  background-image: url("/media/svg/arrows.svg");
+  width: 50%;
+  margin-top: -3rem;
+  margin-left: 9.5rem;
+  z-index: 0;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -1611,6 +1619,7 @@ footer ul {
 
 .hero-title-text {
   width: 100%;
+
   /* display: none; */
 }
 
@@ -1680,7 +1689,6 @@ footer ul {
   h1 {
     font-size: 3.5rem;
   }
-
 
   h2 {
     font-size: 3rem;
@@ -2516,12 +2524,13 @@ footer ul {
 
   .hero-title-text {
     width: 50%;
+    margin-top: -7rem;
     text-align: center;
     /* display: none; */
   }
   .hero-title-text p {
-    font-size: 3.3rem;
-    font-family: var(--font-h);
+    font-size: 5rem;
+    font-family: var(--font-t);
     font-weight: bolder;
     text-align: left;
     padding-left: 8%;
