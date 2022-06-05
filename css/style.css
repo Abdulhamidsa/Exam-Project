@@ -160,13 +160,6 @@ a.logo:focus {
   color: var(--brown);
   text-decoration: none;
 }
-.logo {
-  width: 18%;
-  position: absolute;
-  top: -9.5%;
-  left: 3%;
-  z-index: 1000;
-}
 
 span {
   font-family: var(--font-h);
@@ -260,6 +253,13 @@ nav {
   /* align-items: baseline; */
   background-color: var(--brown);
   z-index: 999;
+}
+.logo {
+  width: 25%;
+  position: absolute;
+  top: -2%;
+  left: 3%;
+  z-index: 1000;
 }
 
 .icons-nav {
@@ -535,9 +535,20 @@ a.links-brown:link {
 }
 
 .links-yellow {
+  color: var(--black);
+
+  /* color: var(--yellow); */
+  /* border: 2px solid var(--yellow); */
+
   color: var(--yellow);
-  font-weight: bolder;
-  background-image: url("../media/svg/button_1.svg;");
+  background-image: url("/media/svg/button_1.svg");
+  background-repeat: no-repeat;
+
+  background-size: 60%;
+  align-self: center;
+  justify-self: center;
+  margin-left: 26%;
+  padding: 8%;
 }
 
 .links-black {
@@ -555,11 +566,24 @@ a.links-brown:link {
 }
 
 .links-brown {
-  color: var(--yellow);
-  font-weight: bolder;
+  width: fit-content;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  margin: 2rem 0;
+  color: var(--brown);
   background-image: url("../media/svg/button-brown.svg");
-  /* color: var(--blue);
-  border: 2px solid var(--blue); */
+  align-self: center;
+  justify-self: center;
+  margin-left: 26%;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center;
+  padding: 8%;
 }
 
 /** Links Hover **/
@@ -1652,6 +1676,13 @@ footer ul {
   nav {
     display: grid;
     grid-template-columns: 25% 75%;
+  }
+  .logo {
+    width: 18%;
+    position: absolute;
+    top: -9.5%;
+    left: 3%;
+    z-index: 1000;
   }
 
   #logo {
