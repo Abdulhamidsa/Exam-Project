@@ -644,7 +644,8 @@ a.links-blue:hover {
 a.links-brown:hover {
   transform: scale(1.1);
 
-  transition: 0.1s;
+  transition: 0.1s ease-out;
+
   /* color: var(--blue);
   border: 2px solid var(--blue); */
 }
@@ -1643,17 +1644,17 @@ footer ul {
 }
 
 .hero-text {
-  display: none;
   flex-direction: row;
+  display: none;
   flex-wrap: wrap;
   position: absolute;
   z-index: 2;
   word-wrap: break-word;
   justify-content: end;
+  width: 30%;
 }
-
-.hero-title-text {
-  width: 100%;
+.hero-title-text .hero-title-text p {
+  font-size: 2rem;
 
   /* display: none; */
 }
