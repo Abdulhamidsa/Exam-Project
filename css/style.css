@@ -187,6 +187,8 @@ body {
   line-height: 24px;
   font-family: "Cabin", sans-serif;
   word-wrap: break-word;
+}
+.body {
   background-color: var(--brown);
 }
 
