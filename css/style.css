@@ -130,6 +130,7 @@ h4 {
   margin: var(--mb);
   font-weight: 800;
   word-break: normal;
+  margin-top: 2rem;
 }
 
 p {
@@ -258,7 +259,7 @@ nav {
   width: 25%;
   position: absolute;
   top: -2%;
-  left: 3%;
+  left: 4%;
   z-index: 1000;
 }
 
@@ -659,14 +660,6 @@ a.links-brown:hover {
 
 .hero {
   height: 400px;
-}
-
-#overlay {
-  background-color: var(--brown);
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  position: absolute;
 }
 
 .hero {
@@ -1466,8 +1459,11 @@ footer ul {
 
 .df-op {
   display: flex;
+  margin-left: 25%;
+  width: 50%;
+  padding: ;
   justify-content: space-around;
-  flex-flow: column;
+  flex-flow: row;
 }
 
 /* .op h2 {
@@ -1573,7 +1569,7 @@ footer ul {
 #overlay {
   position: absolute;
   width: 100vw;
-  height: 101.5vh;
+  height: 32.5vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -1658,6 +1654,14 @@ footer ul {
 /***************** Desktop Header / Nav / Menu ***********/
 
 @media only screen and (min-width: 1200px) {
+  #overlay {
+    background-color: var(--brown);
+    opacity: 0.4;
+    width: 100vw;
+    height: 101.4vh;
+    z-index: 1;
+    position: absolute;
+  }
   h1 {
     font-size: 3.5rem;
   }
@@ -1678,12 +1682,14 @@ footer ul {
   nav {
     display: grid;
     grid-template-columns: 25% 75%;
+    width: 112%;
+    align-self: center;
   }
   .logo {
     width: 18%;
     position: absolute;
     top: -9.5%;
-    left: 3%;
+    left: %;
     z-index: 1000;
   }
 
@@ -2004,6 +2010,7 @@ footer ul {
 
   .shortcuts {
     flex-direction: row;
+    margin: var(--mtb-medium);
   }
 
   .shortcuts .shortcut-image {
