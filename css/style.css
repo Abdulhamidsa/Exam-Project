@@ -601,7 +601,7 @@ a.links-brown:link {
   cursor: pointer;
   margin: 2rem 0;
   color: var(--brown);
-  background-image: url("../media/svg/button-brown.svg");
+  background-image: url("media/svg/button-brown.svg");
   align-self: center;
   justify-self: center;
   margin-left: 26%;
@@ -2523,7 +2523,7 @@ hr {
     letter-spacing: 0.1rem;
     cursor: pointer;
     margin: 2rem 0;
-    background-image: url("../media/svg/button-brown.svg");
+    background-image: url("media/svg/button-brown.svg");
     align-self: center;
     justify-self: center;
     padding: 4%;
