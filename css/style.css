@@ -2537,7 +2537,7 @@ hr {
     /* border: 2px solid var(--yellow); */
 
     color: var(--yellow);
-    background-image: url("/media/svg/button_1.svg");
+    background-image: url("./media/svg/button_1.svg");
     background-repeat: no-repeat;
 
     background-size: 85%;
@@ -2562,7 +2562,7 @@ hr {
 
   .links-brown {
     color: var(--brown);
-    background-image: url("/media/svg/button-brown.svg");
+    background-image: url("./media/svg/button-brown.svg");
     background-repeat: no-repeat;
     min-width: fit-content;
     max-width: fit-content;
