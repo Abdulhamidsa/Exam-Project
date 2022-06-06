@@ -164,7 +164,6 @@ a.logo:focus {
   color: var(--brown);
   text-decoration: none;
 }
-
 span {
   font-family: var(--font-h);
   font-size: x-large;
