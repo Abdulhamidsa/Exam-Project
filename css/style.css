@@ -2035,9 +2035,6 @@ html {
   justify-content: center;
   gap: 2rem;
 }
-.middle-first-checkout {
-  /* padding-top: 10rem; */
-}
 /* PAYMENT METHODS START */
 .payment-method-container {
   display: flex;
@@ -2590,11 +2587,6 @@ hr {
     color: var(--yellow);
     background-color: var(--yellow);
     margin: 0 auto;
-  }
-
-  a.links-yellow:hover {
-    /* background-color: var(--yellow); */
-    /* border: 2px solid var(--yellow); */
   }
 
   a.links-black:hover {
@@ -3435,9 +3427,6 @@ hr {
   .cheackout-buttons {
     flex-flow: row;
   }
-  .middle-first-checkout {
-    /* padding-top: 10rem; */
-  }
   /* PAYMENT METHODS START */
 
   .payment-method-container {
@@ -3655,7 +3644,6 @@ span {
 }
 .cart-info > div {
   display: flex;
-  flex-direction: ;
   align-items: center;
   width: 12%;
 }
