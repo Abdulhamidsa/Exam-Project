@@ -139,7 +139,7 @@ p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 h2 {
@@ -1626,7 +1626,7 @@ footer ul {
 
 .video_bg {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 /* #overlay {
