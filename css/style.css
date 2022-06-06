@@ -9,10 +9,13 @@
 /****** ADOBE FONT *******/
 
 /*font-family: "dashiell-fine", serif;*/
+/** ADOBE FONT **/
+
+/** font-family: "dashiell-fine", serif**/
 
 :root {
   /*fonts & colours*/
-  --font-h: "Lexend Giga", sans-serifu;
+  --font-h: "dashiell-fine", serif;
   --font-t: "Cabin", sans-serif;
   --font-sm: 0.85rem;
 
@@ -731,15 +734,20 @@ main {
 
 .container,
 .container-left,
-.container-right {
+.container-right,
+.container-white {
   /* width: 100%; */
   max-width: 100%;
   display: flex;
 }
 
-.container {
+.container,
+.container-white {
   flex-flow: column;
   margin: 0 auto;
+}
+.container-white {
+  background-color: var(white);
 }
 .container-left {
   justify-content: center;
@@ -882,13 +890,15 @@ section h1 {
   padding: 1rem;
   color: var(--brown);
   font-size: 2.5rem;
+
+  word-wrap: normal;
 }
 
 .index-bb h2 {
   padding: 1rem;
   color: var(--yellow);
   font-size: 2.5rem;
-  margin-left: 3rem;
+
   margin-top: 1rem;
 }
 .shortcuts {
@@ -1626,7 +1636,7 @@ footer ul {
 
 .video_bg {
   width: 100%;
-  opacity: 0.75;
+  opacity: 1x;
 }
 
 /* #overlay {
@@ -1749,6 +1759,22 @@ footer ul {
     top: -10%;
     left: 3%;
     z-index: 1000;
+  }
+
+  .index-wb h2 {
+    padding: 1rem;
+    color: var(--brown);
+    font-size: 2.5rem;
+    margin-right: 3rem;
+    word-break: ;
+  }
+
+  .index-bb h2 {
+    padding: 1rem;
+    color: var(--yellow);
+    font-size: 2.5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
   }
 
   #logo {
@@ -2002,7 +2028,8 @@ footer ul {
 
   .container,
   .container-left,
-  .container-right {
+  .container-right,
+  .container-white {
     width: 1280pc;
     max-width: 1280px;
     display: flex;
@@ -2566,7 +2593,7 @@ footer ul {
   }
   .hero-title-text p {
     font-size: 5rem;
-    font-family: var(--font-t);
+    font-family: var(--font-h);
     font-weight: bolder;
     text-align: left;
     padding-left: 8%;

@@ -37,6 +37,7 @@ function loadTraditional() {
   amountTraditional++; // it increments 1
   document.querySelector(".description-amount-traditional").textContent =
     amountTraditional;
+  localStorage.setItem("traditional", amountTraditional);
 }
 
 function loadDulce() {
@@ -47,6 +48,7 @@ function loadDulce() {
   console.log("Add One Pastry");
   amountDulce++; // it increments 1
   document.querySelector(".description-amount-dulce").textContent = amountDulce;
+  localStorage.setItem("Dulce", amountDulce);
 }
 function loadCream() {
   console.log("Cream Function Works");
@@ -56,6 +58,7 @@ function loadCream() {
   console.log("Add One Pastry");
   amountCream++; // it increments 1
   document.querySelector(".description-amount-cream").textContent = amountCream;
+  localStorage.setItem("Cream", amountCream);
 }
 
 function loadAlfajor() {
@@ -67,6 +70,7 @@ function loadAlfajor() {
   amountAlfajor++; // it increments 1
   document.querySelector(".description-amount-alfajor").textContent =
     amountAlfajor;
+  localStorage.setItem("Alfajor", amountAlfajor);
 }
 
 // let = blank = document.createElement("div");
