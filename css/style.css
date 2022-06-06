@@ -2686,3 +2686,14 @@ table td {
   text-align: center;
   gap: 10rem;
 }
+/* ////////////////////////////// */
+.cart-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
