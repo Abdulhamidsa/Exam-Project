@@ -2744,6 +2744,7 @@ hr {
   }
   .excerpt {
     font-size: 1.4rem;
+    height: 5rem;
     color: black;
   }
   .combo-price {
