@@ -538,6 +538,7 @@ a.links-brown:link {
   text-decoration: none;
 }
 
+
 .links {
   /* color: var(--brown); */
   /* border: 2px solid var(--brown); */
@@ -610,6 +611,109 @@ a.links-brown:link {
   background-position: center;
   padding: 10%;
 }
+
+/* primary buttons */
+.links-primary,
+.links-black-primary,
+.links-yellow-primary,
+.links-blue-primary,
+.links-brown-primary {
+  display: flex;
+  width: fit-content;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: var(--border-radius-100);
+  cursor: pointer;
+  margin: 2rem auto;
+}
+
+a.links-primary:link,
+a.links-black-primary:link,
+a.links-yellow-primary:link,
+a.links-blue-primary:link,
+a.links-brown-primary:link {
+  text-decoration: none;
+}
+
+.links-primary {
+  /* color: var(--brown); */
+  /* border: 2px solid var(--brown); */
+  color: var(--yellow);
+  background-color: var(--brown);
+  margin: 0 auto;
+}
+
+.links-yellow-primary {
+  color: var(--black);
+  background-color: var(--yellow);
+  /* background-color: var(--yellow); */
+  /* border: 2px solid var(--yellow); */
+}
+
+.links-black-primary {
+  color: var(--yellow);
+  background-color: var(--black);
+  /* color: var(--black); */
+  /* border: 2px solid var(--black); */
+}
+
+.links-blue-primary {
+  color: var(--black);
+  background-color: var(--blue);
+  /* color: var(--blue); */
+  /* border: 2px solid var(--blue); */
+}
+
+.links-brown-primary {
+  color: var(--yellow);
+  background-color: var(--brown);
+  /* color: var(--blue);
+  border: 2px solid var(--blue); */
+}
+
+/** Links Hover **/
+
+a.links-primary:hover {
+  /* color: var(--brown);*/
+  /* border: 2px solid var(--brown); */
+  color: var(--brown);
+  background-color: var(--yellow);
+  margin: 0 auto;
+}
+
+a.links-yellow-primary:hover {
+  color: var(--yellow);
+  background-color: var(--black);
+  /* background-color: var(--yellow); */
+  /* border: 2px solid var(--yellow); */
+}
+
+a.links-black-primary:hover {
+  color: var(--black);
+  background-color: var(--yellow);
+  /* color: var(--black); */
+  /* border: 2px solid var(--black); */
+}
+
+a.links-blue-primary:hover {
+  color: var(--white);
+  background-color: var(--black);
+  /* color: var(--blue); */
+  /* border: 2px solid var(--blue); */
+}
+
+a.links-brown-primary:hover {
+  color: var(--brown);
+  background-color: var(--yellow);
+  /* color: var(--blue);
+  border: 2px solid var(--blue); */
+}
+/* primary buttons end */
+
 
 /** Links Hover **/
 
@@ -2179,9 +2283,9 @@ footer ul {
   }
   .combo-price {
     font-size: 1.5rem;
-    color: var(--yellow);
+    color: var(--brown);
     font-weight: bolder;
-    background-color: var(--brown);
+    
     padding: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
