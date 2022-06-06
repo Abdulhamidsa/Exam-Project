@@ -2781,6 +2781,7 @@ footer ul {
 /******************   Abdulhamid   ****************/
 
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
+/* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
 html {
   scroll-behavior: smooth;
 }
@@ -3034,15 +3035,9 @@ table td {
 .picking-time-table > div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 4%;
-  left: 15%;
-  background-color: var(--blue);
-  color: white;
-  font-size: 27px;
-  border: 2px solid white;
+  flex-direction: row;
+  text-align: center;
+  gap: 10rem;
 }
 .df-op {
   display: flex;
