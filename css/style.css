@@ -261,7 +261,7 @@ nav {
 .logo {
   width: 25%;
   position: absolute;
-  top: -5%;
+  top: -3%;
   left: 3%;
   z-index: 1000;
 }
