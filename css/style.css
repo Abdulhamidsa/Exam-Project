@@ -876,6 +876,7 @@ section h1 {
 }
 .index-bb {
   background-color: var(--brown);
+ 
 }
 .index-bb p {
   background-color: var(--yellow);
@@ -1778,7 +1779,7 @@ footer ul {
     color: var(--brown);
     font-size: 2.5rem;
     margin-right: 3rem;
-    word-break: ;
+  
   }
 
   .index-bb h2 {
@@ -2060,7 +2061,12 @@ footer ul {
   .container-white {
     width: 1280pc;
     max-width: 1280px;
+    justify-content: center;
+    align-items: center;
     display: flex;
+  }
+  .container-white {
+    margin: 0 auto;
   }
 
   .container {
