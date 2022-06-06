@@ -142,11 +142,11 @@ p {
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -875,29 +875,38 @@ section h1 {
   background-color: var(--brown);
 }
 .index-bb p {
+  background-color: var(--yellow);
+  padding: 1rem;
+  color: var(--brown);
+}
+
+.index-wb p {
   background-color: var(--brown);
   padding: 1rem;
   color: var(--white);
 }
 
-.index-wb p {
-  background-color: var(--white);
-  padding: 1rem;
-  color: var(--brown);
-}
-
 .index-wb h2 {
   padding: 1rem;
   color: var(--brown);
+<<<<<<< Updated upstream
   font-size: 2.5rem;
 
   word-wrap: normal;
+=======
+  font-size: 1.5rem;
+>>>>>>> Stashed changes
 }
 
 .index-bb h2 {
   padding: 1rem;
+<<<<<<< Updated upstream
   color: var(--yellow);
   font-size: 2.5rem;
+=======
+  color: var(--white);
+  font-size: 1.5rem;
+>>>>>>> Stashed changes
 
   margin-top: 1rem;
 }
@@ -1857,6 +1866,9 @@ footer ul {
   #ani-text-2 {
     background-color: var(--yellow);
   }
+  .index-bb h2 {
+    margin-left: 3rem;
+  }
 
   #ani-text-1,
   #ani-text-2 {
@@ -1878,6 +1890,19 @@ footer ul {
   .home-hero,
   .sustainability-hero {
     height: 100vh;
+  }
+  .index-wb h2 {
+    padding: 1rem;
+    color: var(--brown);
+    font-size: 2.5rem;
+  }
+
+  .index-bb h2 {
+    padding: 1rem;
+    color: var(--white);
+    font-size: 2.5rem;
+
+    margin-top: 1rem;
   }
 
   .center-text {
@@ -1948,7 +1973,7 @@ footer ul {
 
     background-size: 85%;
     background-position: center;
-
+    margin-left: 36%;
     padding: 8%;
   }
 
