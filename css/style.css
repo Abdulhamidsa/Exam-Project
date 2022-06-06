@@ -553,7 +553,7 @@ a.links-brown:link {
   /* border: 2px solid var(--yellow); */
 
   color: var(--yellow);
-  background-image: url("/media/svg/button_1.svg");
+  background-image: url("../media/svg/button_1.svg");
   /*  background-repeat: no-repeat;
 
   background-size: 60%;
@@ -2537,7 +2537,7 @@ hr {
     /* border: 2px solid var(--yellow); */
 
     color: var(--yellow);
-    background-image: url("./media/svg/button_1.svg");
+    background-image: url("../media/svg/button_1.svg");
     background-repeat: no-repeat;
 
     background-size: 85%;
