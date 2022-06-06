@@ -20,7 +20,7 @@ const template = document.querySelector("#articleTemplate").content;
 function showArticle(art) {
   console.log(art);
   const copy = template.cloneNode(true);
-  copy.querySelector(".title").textContent = art.title.rendered;
+  copy.querySelector(".title_blog").textContent = art.title.rendered;
   //   copy.querySelector(".subtitle").textContent = art.description;
   copy.querySelector(".excerpt").textContent = art.excerpt.rendered;
   copy.querySelector(".article_cover a img").src = art.image.guid;

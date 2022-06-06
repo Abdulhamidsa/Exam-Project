@@ -20,9 +20,9 @@ fetch(url)
 
 function showArticle(art) {
   console.log(art);
-  document.querySelector("title").textContent = art.title.rendered;
+  document.querySelector("title_article").textContent = art.title.rendered;
   //   copy.querySelector("h3").textContent = art.text;
-  document.querySelector(".article_text").textContent = art.excerpt.rendered;
+  document.querySelector(".article_text").textContent = art.content.rendered;
   document.querySelector(".article_image img").src = art.image.guid;
   document.querySelector(".date").textContent = art.date;
   document.querySelector(".author").textContent = art._embedded.author[0].name;
