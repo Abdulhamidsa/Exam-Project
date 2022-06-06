@@ -1,5 +1,5 @@
 const url =
-  "http://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/article?_embed";
+  "https://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/article?_embed";
 
 fetch(url)
   .then((response) => {

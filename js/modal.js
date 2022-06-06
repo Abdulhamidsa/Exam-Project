@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 const url =
-  "http://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/article/" +
+  "https://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/article/" +
   id +
   "?_embed";
 
