@@ -1,4 +1,4 @@
-const url = "https://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/combo/";
+const url = "http://sesejose.com/kea/wp_entremasas/wp-json/wp/v2/combo?_embed";
 
 fetch(url)
   .then((response) => {
