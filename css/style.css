@@ -2618,6 +2618,9 @@ footer ul {
     margin-top: -5rem;
     text-align: center;
     /* display: none; */
+    background-image: url("../media/svg/shape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .hero-title-text p {
     font-size: 5rem;
