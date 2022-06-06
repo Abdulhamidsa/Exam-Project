@@ -3280,7 +3280,9 @@ hr {
   /******************   Abdulhamid   ****************/
 
   /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
-
+  #checkout-page {
+    overflow: hidden;
+  }
   html {
     scroll-behavior: smooth;
   }
