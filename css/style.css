@@ -2781,50 +2781,70 @@ footer ul {
 /******************   Abdulhamid   ****************/
 
 /* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
-/* CHEACKOUT METHOD 1 / PICKING UP OPTION PAGE START */
 html {
   scroll-behavior: smooth;
 }
 #cheackout-method1-body {
-  overflow: hidden;
+  overflow: scroll;
 }
 .extra-line {
   visibility: hidden;
 }
 
 .h100vh {
-  height: 100vh;
+  height: auto;
 }
 .section-frist-cheackout,
 .middle-first-checkout,
 .end-first-checkout,
 .picking-time-table {
-  display: grid;
-  grid-template-columns: 60%;
-  justify-items: center;
+  display: flex;
+  flex-flow: column;
   justify-content: center;
-  padding: 5rem 1rem 1rem 0rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  padding-bottom: 0;
 }
+
+.section-frist-cheackout {
+  padding: 0 !important;
+}
+
+.buttons-methods {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.m0i {
+  margin: 0 !important;
+}
+
 .section-frist-cheackout :nth-child(2) {
   display: flex;
+  flex-flow: column;
   align-items: center;
-  gap: 6rem;
+  gap: 1rem;
 }
 .middle-line {
-  width: 0.1rem;
-  height: 7rem;
+  height: 0.1rem;
+  width: 7rem;
   background-color: rgb(0, 0, 0);
 }
 .section-frist-cheackout button,
 .cheackout-buttons :first-child {
   background-color: var(--white);
-  font-size: 1rem;
-  color: var(--black);
-  padding: 1.5rem 4rem 1.5rem;
+  color: var(--brown);
+  padding: 1.5rem 4rem;
   border: solid var(--brown);
   cursor: pointer;
 }
+
+.cheackout-buttons {
+  padding: var(--plr);
+}
+
 .section-frist-cheackout button:last-child,
 .cheackout-buttons :last-child {
   background-color: var(--brown);
@@ -2838,7 +2858,7 @@ html {
 .slider-checkout {
   position: fixed;
   top: 30%;
-  right: 95%;
+  right: 90%;
 }
 .progress-circle {
   width: 1.1rem;
@@ -2904,7 +2924,7 @@ html {
 }
 .middle-first-checkout > div > div {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   justify-content: space-between;
 }
@@ -2928,15 +2948,17 @@ html {
 }
 .cheackout-buttons {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   gap: 2rem;
 }
 .middle-first-checkout {
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
 }
 /* PAYMENT METHODS START */
 .payment-method-container {
   display: flex;
+  flex-flow: column;
   width: 100%;
   justify-content: space-between;
 }
@@ -2955,7 +2977,7 @@ html {
   border-right: transparent;
 }
 .payment-method-container img {
-  width: 35%;
+  width: 8rem;
 }
 .payment-method-container :nth-child(3) img {
   width: 10%;
@@ -2965,14 +2987,49 @@ html {
 }
 .form-first-checkout {
   display: flex;
-  flex-direction: row;
+  flex-flow: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: var(--mtb-medium);
-  padding: var(--p-large);
-  gap: var(--p);
+  /* justify-content: center; */
+  align-items: center;
+  padding: var(--p);
+  gap: 2rem;
+  width: 100%;
+}
+.form-first-checkout input {
+  width: 100%;
+  height: 2rem;
+}
+.form-first-checkout div:first-child,
+.form-first-checkout div:nth-child(2) {
+  width: 100%;
+}
+.form-first-checkout div:last-child,
+.form-first-checkout div:nth-last-child(2) {
   width: 50%;
 }
+
+.cont-comb-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  padding: var(--plr);
+}
+
+.cont {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.comb {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  /* width: 100%; */
+}
+
 .payment-section {
   border: 1px solid var(--brown);
   margin: var(--mtb);
@@ -3006,6 +3063,8 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
   text-align: center;
   margin: var(--mtb-large);
+  align-items: center;
+  justify-content: end;
 }
 .hidden {
   display: none;
@@ -3035,9 +3094,120 @@ table td {
 .picking-time-table > div {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  gap: 10rem;
+  /* gap: 10rem; */
+  justify-content: center;
+}
+
+.picking-time-date-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: baseline;
+  /* margin: var(--mtb-medium); */
+  padding: var(--plr);
+}
+
+/*Calendar*/
+
+.weekdays {
+  margin: 0;
+  padding: var(--p);
+  background-color: var(--brown);
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: var(--white);
+  text-align: center;
+}
+
+.days {
+  padding: var(--p);
+  background: var(--white);
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+}
+
+.days li p {
+  margin: 0 !important;
+}
+
+.days li .active {
+  /* padding: 5px; */
+  background: var(--brown);
+  color: var(--white) !important;
+}
+
+.weekdays li,
+.days li {
+  width: 12.2%;
+}
+
+/*Times*/
+
+.times {
+  padding: var(--p);
+  background: var(--white);
+  margin: 0;
+}
+
+.times li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+  padding: 5px;
+}
+
+.times li p {
+  margin: 0 !important;
+}
+
+.times li .active {
+  /* padding: 5px; */
+  background: var(--brown);
+  color: var(--white) !important;
+}
+
+.weekdays li,
+.times li {
+  width: 12.2%;
+}
+
+.date-and-time,
+.order-summary-checkout,
+.choose-payment-method,
+.delivery-cost {
+  padding: var(--plr);
+}
+
+.order-summary-checkout,
+.delivery-cost {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+hr {
+  border: 1px solid var(--brown);
 }
 .df-op {
   display: flex;
