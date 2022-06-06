@@ -32,13 +32,19 @@ function showProduct(combo) {
     .querySelector(".combos-img-container")
     .addEventListener("click", openModal);
 
+  // copy
+  //   .querySelector(".price-add-to-card a")
+  //   .addEventListener("click", openModal);
+
+  // document.querySelector(".close").addEventListener("click", closeModal);
+
+  // copy.querySelector(
+  //   ".combo-img-container"
+  // ).style.backgroundImage = `url(${combo.image.guid})`;
+
   const parent = document.querySelector("#shop-grid");
   parent.appendChild(copy);
 }
-
-//********* Modal *********/
-
-document.querySelector(".close").addEventListener("click", closeModal);
 
 /////////////////Geting the Modal from the DOM
 var modal = document.getElementById("myModal");
@@ -52,8 +58,3 @@ function openModal() {
 function closeModal() {
   modal.style.display = "none";
 }
-
-/* Background Image */
-// copy.querySelector(
-//   ".combo-img-container"
-// ).style.backgroundImage = `url(${combo.image.guid})`;

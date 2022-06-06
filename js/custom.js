@@ -1,10 +1,16 @@
+let = traditional = 0;
+let = dulce = 0;
+let = cream = 0;
+let = alfajor = 0;
+
 let = amountTraditional = 0;
 let = amountCream = 0;
 let = amountDulce = 0;
 let = amountAlfajor = 0;
 
-//let's Start
+//FUNCTIONS
 start();
+// deleteProduct();
 
 //Pick Up Pastry
 
@@ -20,7 +26,7 @@ function start() {
 
 //Function create Div in the grid.
 
-//Functions Loading Pastries
+//Handle Functions
 
 function loadTraditional() {
   console.log("Traditional Function Works");
@@ -31,6 +37,7 @@ function loadTraditional() {
   amountTraditional++; // it increments 1
   document.querySelector(".description-amount-traditional").textContent =
     amountTraditional;
+  localStorage.setItem("traditional", amountTraditional);
 }
 
 function loadDulce() {
@@ -41,6 +48,7 @@ function loadDulce() {
   console.log("Add One Pastry");
   amountDulce++; // it increments 1
   document.querySelector(".description-amount-dulce").textContent = amountDulce;
+  localStorage.setItem("Dulce", amountDulce);
 }
 function loadCream() {
   console.log("Cream Function Works");
@@ -50,6 +58,7 @@ function loadCream() {
   console.log("Add One Pastry");
   amountCream++; // it increments 1
   document.querySelector(".description-amount-cream").textContent = amountCream;
+  localStorage.setItem("Cream", amountCream);
 }
 
 function loadAlfajor() {
@@ -61,6 +70,7 @@ function loadAlfajor() {
   amountAlfajor++; // it increments 1
   document.querySelector(".description-amount-alfajor").textContent =
     amountAlfajor;
+  localStorage.setItem("Alfajor", amountAlfajor);
 }
 
 // let = blank = document.createElement("div");
@@ -68,8 +78,3 @@ function loadAlfajor() {
 // document.querySelector(".description-amount-dulce").textContent = blank;
 // document.querySelector(".description-amount-cream").textContent = blank;
 // document.querySelector(".description-amount-alfajor").textContent = blank;
-
-// let = traditional = 0;
-// let = dulce = 0;
-// let = cream = 0;
-// let = alfajor = 0;
