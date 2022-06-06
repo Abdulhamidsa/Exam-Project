@@ -1603,6 +1603,7 @@ html {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 0;
 }
 
 .section-frist-cheackout {
